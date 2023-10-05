@@ -11,7 +11,7 @@ t = (0:M-1)*T;
 %s = 20*sin((6.28*50*t));
 %s = zeros(1,M);
 s = 4*randn(1,M);
-x = (5*sin((6.28*5*t))+5).*sin((6.28*25*t));
+x = (5*sin((6.28*5*t))+5).*(2*sin(6.28*25*t));
 %x_d = (2*sin((6.28*5*t))+8).*sin((6.28*25*t)+3.14);
 %x = 4*randn(1,M);     % innovation
 d = s+x;
@@ -38,9 +38,9 @@ rx0 = Rx(Lx_init);
 for k = 1:Lx
     if k > Lx_init
       %rx1 = rx0 + ((1/Lx_init)*((xx(k)*xx(k))-(xx(k-Lx_init)*xx(k-Lx_init))));
-      %rx1 = rx0 + ((1/Lx_init)*((xx(k)*xx(k))-rx0));
-      Rx = xcorr(x(k-Lx_init+1:k),'unbiased');
-      rx1 = Rx(Lx_init);
+      rx1 = rx0 + ((1/Lx_init)*((xx(k)*xx(k))-rx0));
+      %Rx = xcorr(x(k-Lx_init+1:k),'unbiased');
+      %rx1 = Rx(Lx_init);
       mu = 1/(rx1*(p+1)*10);
       xn  = xx(k:1:k+N)';
       b = b + 2*mu*e(k)*xn;
@@ -63,19 +63,19 @@ subplot(3,1,1)
 plot(t,s,'k')
 ylim([-25 25])
 xlim([0 (M-1)*T])
-title('EKG-Signal','FontName','Arial','FontSize',12)
+title('Required Signal','FontName','Arial','FontSize',12)
 grid on
 subplot(3,1,2)
 plot(t,x,'k')
 ylim([-25 25])
 xlim([0 0.5])
-title('50Hz Netzbrummen','FontName','Arial','FontSize',12)
+title('Disturbance','FontName','Arial','FontSize',12)
 grid on
 subplot(3,1,3)
 plot(t,d,'k')
 ylim([-45 45])
 xlim([0 (M-1)*T])
-title('EKG-Signal mit �berlagertem Netzbrummen','FontName','Arial','FontSize',12)
+title('Required Signal disturbed','FontName','Arial','FontSize',12)
 grid on
 
 figure(2)
@@ -84,19 +84,19 @@ subplot(3,1,1)
 plot(t,y,'k')
 ylim([-25 25])
 xlim([Lx_init*T (M-1)*T])
-title('Gesch�tztes 50Hz Netzbrummen','FontName','Arial','FontSize',12)
+title('Estimated Disturbance','FontName','Arial','FontSize',12)
 grid on
 subplot(3,1,2)
 plot(t,d,'k')
 ylim([-45 45])
 xlim([Lx_init*T (M-1)*T])
-title('EKG-Signal mit �berlagertem Netzbrummen','FontName','Arial','FontSize',12)
+title('Required Signal disturbed','FontName','Arial','FontSize',12)
 grid on
 subplot(3,1,3)
 plot(t,e,'k')
 ylim([-25 25])
 xlim([Lx_init*T (M-1)*T])
-title('EKG-Signal st�rbefreit','FontName','Arial', 'FontSize',12)
+title('Disturbance Free Signal','FontName','Arial', 'FontSize',12)
 grid on
 
 figure(3)
@@ -111,12 +111,13 @@ subplot(2,1,2)
 plot(t,e,'k')
 ylim([-25 25])
 xlim([Lx_init*T (M-1)*T])
-title('Noise free signal','FontName','Arial', 'FontSize',12)
+title('Disturbance Free Signal','FontName','Arial', 'FontSize',12)
 grid on
 
 figure(4)
 clf
 plot(f,abs(Y),'k')
 xlim([0 100])
+title('Frequency Response of Required Signal','FontName','Arial', 'FontSize',12)
 grid on
 
