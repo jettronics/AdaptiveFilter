@@ -1,4 +1,184 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
 
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+% \documentclass[11pt]{article} % use larger type; default would be 10pt
+\documentclass[
+    10pt, % Schriftgröße
+    DIV12,
+    english, % für Umlaute, Silbentrennung etc.
+    a5paper, % Papierformat
+    twoside, % zweiseitiges Dokument
+    titlepage, % es wird eine Titelseite verwendet
+    parskip=half, % Abstand zwischen Absätzen (halbe Zeile)
+    headings=small, % Größe der Überschriften verkleinern
+    listof=totoc, % Verzeichnisse im Inhaltsverzeichnis aufführen
+    bibliography=totoc, % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+    index=totoc, % Index im Inhaltsverzeichnis aufführen
+    captions=tableheading, % Beschriftung von Tabellen unterhalb ausgeben
+    final % Status des Dokuments (final/draft)
+]{scrbook}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[T1]{fontenc}
+\usepackage{textcomp} % Euro-Zeichen etc.
+
+\usepackage[
+	automark, % Kapitelangaben in Kopfzeile automatisch erstellen
+	headsepline, % Trennlinie unter Kopfzeile
+	ilines % Trennlinie linksbündig ausrichten
+]{scrlayer-scrpage}
+
+% Anpassung an Landessprache ---------------------------------------------------
+\usepackage[english]{babel}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+\usepackage{lmodern} % bessere Fonts
+\usepackage{relsize} % Schriftgröße relativ festlegen
+
+%%% PAGE DIMENSIONS
+% \usepackage{geometry} % to change the page dimensions
+\usepackage{setspace}
+\usepackage[paperwidth=17cm,paperheight=24cm]{geometry}
+% \geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+\geometry{left=20mm,right=20mm,top=15mm,bottom=20mm}
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{trfsigns}
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{float}
+\usepackage{amsmath} %
+\usepackage{amssymb}
+\usepackage{tikz} % Draw sig­nal flow graphs
+\usetikzlibrary{dsp,chains}
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+% \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+% \pagestyle{fancy} % options: empty , plain , fancy
+% \renewcommand{\headrulewidth}{0pt} % customise the layout...
+% \lhead{}\chead{}\rhead{}
+% \lfoot{}\cfoot{\thepage}\rfoot{}
+
+% Kopf- und Fußzeilen ----------------------------------------------------------
+\pagestyle{scrheadings}
+% Kopf- und Fußzeile auch auf Kapitelanfangsseiten
+\renewcommand*{\chapterpagestyle}{scrheadings} 
+% Schriftform der Kopfzeile
+\renewcommand{\headfont}{\normalfont}
+
+% Kopfzeile
+\ihead{\textit{\headmark}}
+\chead{}
+\ohead{\pagemark}
+\setlength{\headheight}{10mm} % Höhe der Kopfzeile
+\setheadsepline[text]{0.4pt} % Trennlinie unter Kopfzeile
+
+% Fußzeile
+\ifoot{}
+\cfoot{}
+\ofoot{}
+
+\setlength{\footskip}{20pt}
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+\RedeclareSectionCommand[
+  beforeskip=-1sp,
+  afterskip=2\baselineskip]{chapter}
+\RedeclareSectionCommand[
+  beforeskip=-\baselineskip,
+  afterskip=.5\baselineskip]{section}
+\RedeclareSectionCommand[
+  beforeskip=-.75\baselineskip,
+  afterskip=.5\baselineskip]{subsection}
+\RedeclareSectionCommand[
+  beforeskip=-.5\baselineskip,
+  afterskip=.25\baselineskip]{subsubsection}
+\RedeclareSectionCommand[
+  beforeskip=.5\baselineskip,
+  afterskip=-1em]{paragraph}
+\RedeclareSectionCommand[
+  beforeskip=-.5\baselineskip,
+  afterskip=-1em]{subparagraph}
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\newcommand{\z}{\mathpzc{z}}
+
+\usepackage{xcolor}
+\definecolor{instruction}{gray}{0.80}
+
+\newtheorem{beispiel}{Beispiel}[chapter]
+
+% zum Einbinden von Programmcode -----------------------------------------------
+\usepackage{listings}
+\usepackage{xcolor} 
+\definecolor{hellgelb}{rgb}{1,1,0.9}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+\definecolor{hellgrau}{rgb}{0.96,0.96,0.96}
+\lstset{
+    float=hbp,
+    basicstyle=\ttfamily\color{black}\small\smaller,
+    identifierstyle=\color{black},
+    keywordstyle=\color{black},
+    stringstyle=\color{black},
+    commentstyle=\color{gray},
+    columns=flexible,
+    tabsize=2,
+    frame=single,
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    backgroundcolor=\color{hellgrau},
+    breakautoindent=true
+}
+
+%%% END Article customizations
+
+
+%%% The "real" document content comes below...
+
+%\title{Ausgewählte Themen der Informatik in Theorie und Praxis}
+%\author{Jens Thielemann}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+%\maketitle
+\tableofcontents 
+
+\newpage
 
 \chapter{Prädiktion}
 Viele Aufgaben in der digitalen Signalverarbeitung werden mit der Prädiktion realisiert. Dazu zählen Anwendungen in der Audio- und Videocodierung, Vorhersagen von Aktienkursen, 
@@ -291,23 +471,17 @@ kann man das Gleichungssystem folgendermassen zum Levinson-Durbin-Algorithmus ve
 &k_p=-\frac{q^{(p-1)}}{E(e_k^2)_{opt}^{(p-1)}}\nonumber\\
 &E(e_k^2)_{opt}^{(p)}=E(e_k^2)_{opt}^{(p-1)}\cdot (1-k_p^2)\nonumber
 \end{align}
-Das folgende Matlab Programm \ref{sec:ListingLevinsonDurbin} implementiert den Levinson-Durbin-Algorithmus. Zuerst werden die Variablen mit 0 initialisiert. Der Startwert für $\alpha$
+Das folgende Matlab Programm  implementiert den Levinson-Durbin-Algorithmus. Zuerst werden die Variablen mit 0 initialisiert. Der Startwert für $\alpha$
 ergibt sich aus der Lösung der mittleren Zeile von \eqref{matrix3} für einen Prädiktor 1.Ordnung aus \eqref{solvealpha1}. Die anderen Berechnungen ergeben sich direkt aus obigen Gleichungen.
-\label{sec:ListingLevinsonDurbin}
-\lstset{language=Matlab, basicstyle=\footnotesize, showstringspaces=false, tabsize=2, numbers=none}
-\lstinputlisting[label=lst:ListingLevinsonDurbin,
- caption=Levinson-Durbin-Algorithmus in Matlab]{Prediction/lev_dur.m}
+%\label{sec:ListingLevinsonDurbin}
+%\lstset{language=Matlab, basicstyle=\footnotesize, showstringspaces=false, tabsize=2, numbers=none}
+%\lstinputlisting[label=lst:ListingLevinsonDurbin,
+% caption=Levinson-Durbin-Algorithmus in Matlab]{Prediction/lev_dur.m}
 Eine Anwendung des Algorithmus wird in Kapitel \ref{sec:dekorrelation} bezüglich Dekorrelation gezeigt.
 
 \section{Least-Mean-Square-Algorithmus}\label{sec:gradientenverfahren}
 Eine anderer Methode die Prädiktor-Koeffizienten zu berechnen stellt der Least-Mean-Square-Algorithmus dar. Hierbei handelt es sich um eine Näherungsverfahren um den Rechenaufwand klein zu halten. Ein Verfahren ist die Methode des steilsten Abstiegs oder auch Gradientenverfahren genannt. Damit nähert man sich sozusagen den optimalen Koeffizienten an. Man beginnt quasi mit einem Satz Koeffizienten an der Stelle $E(e_k^2)|_{\textit{\textbf{b}}_{start}}$  und nähert sich dem kleinsten mittleren quadratischen Fehler $E(e_k^2)_{opt}$ an (vgl. Abbildung \ref{fig:mseexample}). 
-\begin{figure}[H]
-\centering
-%\includegraphics[trim=5mm 3mm 5mm 3mm, clip=true, width=14cm]{mse.pdf}
-\includegraphics[width=10cm]{Prediction/mse.pdf}
-\caption{Beispiel mittlerer quadratische Fehler mit einer Ordnung von N=1}
-\label{fig:mseexample}
-\end{figure}
+
 \noindent
 Allgemein ist das Gradientenverfahren definiert mit:
 \begin{equation}\label{gradmethod}
@@ -396,14 +570,8 @@ erhält man die Form eines zeitdiskreten PT1-Glieds mit der Verstärkung $K=1$ u
 \begin{equation}
 \frac{\Delta t}{T+\Delta t}=\frac{1}{N} \rightarrow T=(\Delta t\:N)-\Delta t \nonumber
 \end{equation}
-Um die Unterschiede der verschiedenen Optimierungen darzustellen soll ein mittelwertfreies Rauschsignal mit unterschiedlicher Amplitude erzeugt werden (s. Abbildung \ref{fig:varianzmittelwertfrei}).
-\begin{figure}[h]
-\centering
-%\includegraphics[trim=5mm 3mm 5mm 3mm, clip=true, width=14cm]{mse.pdf}
-\includegraphics[trim=20mm 75mm 20mm 70mm, clip, width=12cm]{Prediction/Varianz_mittelwert_frei.pdf}
-\caption{Beispiel mittelwertfreies Rauschsignal mit unterschiedlicher Amplitude und deren gleitender Varianz mit $N=50$.}
-\label{fig:varianzmittelwertfrei}
-\end{figure}
+Um die Unterschiede der verschiedenen Optimierungen darzustellen soll ein mittelwertfreies Rauschsignal mit unterschiedlicher Amplitude erzeugt werden (s. Abbildung).
+
 Der Varianzverlauf der unoptimierten Gleichung zeigt die zweite Darstellung von oben. Die Laufzeit optimierte Version mit dem notwendigen Ringbuffer wird durch den dritten Verlauf und die Laufzeit optimierte plus Speicher optimierte Variante durch die unterste Darstellung gezeigt. Es gibt quasi keinen Unteschied zu den ersten beiden Verläufen. Im untersten Verlauf tritt das PT1 Verhalten mit der Zeitkonstante $T=100ms\cdot50-100ms=4.9s$ klar zum Vorschein.\newline
 \newline
 Bei einem mittelwertbehafteten Signal muß der Mittelwert bei der Varianzberechnung entsprechend wie folgt abgezogen bzw. korrigiert werden:
@@ -422,14 +590,8 @@ erhält man einen Term bestehend aus der Autokorrelationfunktion und dem quadrie
 \begin{equation}\label{initsigmamittelwert}
 \sigma_{xx}^2=R_{xx,k}(0)-\left(\frac{1}{N}\sum_{n=0}^{N-1}x_{k-n}\right)^2
 \end{equation}
-Zur Demonstration wie unterschiedlich die Varianz ausfällt wenn der Mittelwert nicht berücksichtigt wird zeigt Abbildung \ref{fig:varianzmittelwertfrei} mitte. Das Ausgangssignal ist das gleiche Rauschsignal wie in Abbildung \ref{fig:varianzmittelwertfrei} oben dargestellt nur mit einem zeitlich begrenzten Offset zwischen Zeitpunkt 100 und 150 mit einer Amplitude von 500.
-\begin{figure}[H]
-\centering
-%\includegraphics[trim=left bottom right top, clip]
-\includegraphics[trim=20mm 70mm 20mm 70mm, clip, width=12cm]{Prediction/Varianz_mittelwert.pdf}
-\caption{Beispiel mittelwertbehaftetes Rauschsignal und deren gleitender Varianz mit $N=50$.}
-\label{fig:varianzmittelwertfrei}
-\end{figure}
+Zur Demonstration wie unterschiedlich die Varianz ausfällt wenn der Mittelwert nicht berücksichtigt wird zeigt Abbildung mitte. Das Ausgangssignal ist das gleiche Rauschsignal wie in Abbildung oben dargestellt nur mit einem zeitlich begrenzten Offset zwischen Zeitpunkt 100 und 150 mit einer Amplitude von 500.
+
 
 \section{Störunterdrückung}
 In vielen Bereichen der Signalverabeitung ist es notwendig Störsignale wie Rauschen, Netzbrummen oder anderweitige Einflüsse zu unterdrücken. Mit herkömmlicher Filterung 
@@ -501,13 +663,7 @@ Ein Prädiktionsfilter welches das ermöglicht zeigt Abbildung \ref{fig:predicti
 Hierfür ist ein weiterer Eingang $d_k$ gegenüber der Struktur in Abbildung \ref{fig:linearpredictor} notwendig um das gewünschte Signal vorzugeben. Eine Vorraussetzung ist, dass das Störsignal separat abgreifbar und dem Filter mittels Eingang 
 $x_k$ zugeführt werden kann. Ein Beispiel für ein Störsignal wäre das 50Hz Netzbrummen welches sich oft dem Nutzsignal überlagert. Die Abbildung \ref{fig:ecg_signal_with_noise} 
 zeigt als Nutzsignal ein EKG-Signal überlagert mit Netzbrummen als Störsignal.
-\begin{figure}[H]
-\centering
-%\includegraphics[trim=5mm 3mm 5mm 3mm, clip=true, width=14cm]{mse.pdf}
-\includegraphics[trim=25mm 75mm 25mm 73mm, clip=true, width=12cm]{Prediction/ecg_signal_with_noise.pdf}
-\caption{EKG-Signal mit überlagertem 50Hz Netzbrummen als Störsignal}
-\label{fig:ecg_signal_with_noise}
-\end{figure}
+
 \noindent
 Das Störsignal am Eingang $x_k$ wird mittels dem Prädiktionsfilter $H_1(z)$ nach \eqref{linearcombination} geschätzt und die dafür benötigten Koeffiezienten mit $H_2(z)$ nach \eqref{gradmethod2} berechnet. Das resultierende Signal am Ausgang $e_k$ ist das störbefreite Nutzsignal. \\\\
 Der Algorithmus zur adaptiven Prädiktion setzt sich aus folgenden Operationen zusammen:\\\\
@@ -527,13 +683,7 @@ Initialisierungsphase bzw. mit Gleichung \eqref{runsigma2} nach der Initialisier
 Wendet man diesen Algorithmus auf das EKG-Signal mit dem 50Hz Netzbrummen am Eingang $d_k$ an (Abbildung \ref{fig:ecg_signal_without_noise} mitte), 
 so erhält man für das geschätzte Störsignal $\hat{x}_k$ den Verlauf in Abbildung \ref{fig:ecg_signal_without_noise} oben und für das störbefreite Signal $e_k$ 
 Abbildung \ref{fig:ecg_signal_without_noise} unten.
-\begin{figure}[H]
-\centering
-%\includegraphics[trim=5mm 3mm 5mm 3mm, clip=true, width=14cm]{mse.pdf}
-\includegraphics[trim=25mm 75mm 25mm 73mm, clip=true, width=12cm]{Prediction/ecg_signal_without_noise.pdf}
-\caption{EKG-Signal störbefreit mittels adaptiver Prädiktion}
-\label{fig:ecg_signal_without_noise}
-\end{figure}
+
 \noindent
 
 ToDo: Lernkurve LMS-Algorithmus
@@ -618,13 +768,7 @@ f_b<0.1\:f_{\hat{x}}
 \end{equation}
 Denn für kurze Zeitabschnitte kann das Signal als korreliert betrachtet werden. \\\\
 Wendet man die Dekorrelation nach Struktur in Abbildung \ref{fig:decorrelationfilter} auf ein EKG-Signal an, erhält man ein dekorreliertes Signal in Abbildung \ref{fig:ecg_signal_decorrelated} unten.
-\begin{figure}[H]
-\centering
-%\includegraphics[trim=5mm 3mm 5mm 3mm, clip=true, width=14cm]{mse.pdf}
-\includegraphics[trim=25mm 75mm 25mm 70mm, clip, width=10cm]{Prediction/ecg_signal_decorrelated.pdf}
-\caption{Dekorreliertes EKG-Signal}
-\label{fig:ecg_signal_decorrelated}
-\end{figure}
+
 \noindent
 Man kann erkennen, dass die Werte des dekorrelierten Signals um die Null-Achse (mittelwertfrei) angeordnet sind. 
 
@@ -722,13 +866,7 @@ Um eine Datenkompression mittels einer Entropiecodierung beispielsweise durch f�
 \end{figure}
 \noindent
 Im Prinzip baut diese Struktur auf die Struktur in Abbildung \ref{fig:decorrelationfilter} auf. Neu hinzugekommen ist der Block $Q$ für die Quantisierung. Dieser bekommt als Eingang das nicht quantisierte Dekorrelationssignal $e_k$ und quantisiert es zu $e'_k$ (siehe Abbildung \ref{fig:ecg_signal_quant_decorrelated}). 
-\begin{figure}[H]
-\centering
-\includegraphics[trim=25mm 75mm 25mm 73mm, clip=true, width=10cm]{Prediction/ecg_signal_quant_decorrelated.pdf} % left bottom right top
-%\includegraphics[width=12cm]{ecg_signal_quant_decorrelated.pdf}
-\caption{Dekorreliertes, quantisiertes EKG-Signal}
-\label{fig:ecg_signal_quant_decorrelated}
-\end{figure}
+
 \noindent
 Der Prädiktor $H(z)$ rechnet nun mit einem quantisierten Eingangssignal $x'_k$ um einen entsprechenden Schätzwert $\hat{x}_k$ zu berechnen. Der Prädiktor hat für dieses Beispiel eine 
 Filterordnung von $N=3$, d.h. es werden vier Koeffizienten vom LMS-Algorithmus berechnet. Der Dekorrelations-Algorithmus nach Struktur in Abbildung \ref{fig:quantdecorrelationfilter} setzt sich aus folgenden Operationen zusammen:\\\\
@@ -759,19 +897,9 @@ Mit $H(z)$ berechnet aus dem Signalfluß in Abbildung \eqref{linearcombination} 
 x_k = b_1\:x_{k-1}+b_2\:x_{k-2}+...+e_k\nonumber
 \end{equation}
 Setzt man die Koeffizienten die man vorher mittels LMS-Algorithmus bestimmt hat ein so erhältt man das ursprüngliche Signal wie in Abbildung \ref{fig:ecg_signal_quant_back_correlated} gezeigt zurück.
-\begin{figure}[H]
-\centering
-\includegraphics[trim=25mm 75mm 25mm 73mm, clip=true, width=10cm]{Prediction/ecg_signal_quant_back_correlated.pdf} % left bottom right top
-\caption{Rückgewonnenes EKG-Signal nach quantisierter Dekorrelation}
-\label{fig:ecg_signal_quant_back_correlated}
-\end{figure}
+
 Da bekanntlich IIR-Filter dazu neigen instabil zu werden muss auf Stabilität geprüft werden. Dies erreicht man indem man auf die Lage der Pole im Pol-Nullstellen-Diagramm schaut. Die Pole müssen sich innerhalb des Einheitskreises befinden, dann ist das Filter stabil. Dies ist laut Abbildung \ref{fig:ecg_signal_quant_back_correlated_poles} der Fall. 
-\begin{figure}[H]
-\centering
-\includegraphics[trim=25mm 70mm 25mm 73mm, clip=true, width=10cm]{Prediction/ecg_signal_quant_back_correlated_poles.pdf} % left bottom right top
-\caption{Pol-Nullstellen-Diagramm des IIR-Filters zur Signalrückgewinnung}
-\label{fig:ecg_signal_quant_back_correlated_poles}
-\end{figure}
+
 \subsection{Prädiktionsgewinn}
 Eine Kenngröße der Prädiktion ist der Prädiktionsgewinn. Diese Größe gibt Auskunft wie effektiv das Fehlersignal $e_k$ komprimiert werden kann. 
 Der Prädiktionsgewinn ist definiert mit:
@@ -786,7 +914,5 @@ Letztendlich führt die Quantisierung Q in Abbildung \ref{fig:quantdecorrelation
 
 
 
-
-
-
+\end{document}
 
