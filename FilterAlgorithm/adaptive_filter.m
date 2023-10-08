@@ -8,15 +8,16 @@ T = 1/Fs;
 M = 4000;
 t = (0:M-1)*T;
 
-%s = 20*sin((6.28*50*t));
+%s = 20*sin((6.28*150*t));
 %s = zeros(1,M);
 s = 4*randn(1,M);
 x = (5*sin((6.28*5*t))+5).*(2*sin(6.28*25*t));
-%x_d = (2*sin((6.28*5*t))+8).*sin((6.28*25*t)+3.14);
-%x = 4*randn(1,M);     % innovation
-d = s+x;
+x_d = (5*sin(5*(6.28*t-0.3))+5).*(1.5*sin(25*(6.28*t-0.3)));
+
+%d = s+x;
+d = s+x_d;
 % prediction order (FIR filter order + 1)
-p = 20
+p = 32
 b = zeros(p,1);
 % FIR filter order
 N  = length(b)-1;
@@ -53,9 +54,18 @@ end
 e = e(1:Lx);
 
 f = [0:floor((M-1)/2)] / (M*(1/1000));
-Y = fft(hamming(M)'.*s');
-Y = Y/M;
-Y = [Y(1) 2*Y(2:floor((M-1)/2)+1)];
+
+Yx = fft(hamming(M)'.*x_d');
+Yx = Yx/M;
+Yx = [Yx(1) 2*Yx(2:floor((M-1)/2)+1)];
+
+Ye = fft(hamming(M)'.*e');
+Ye = Ye/M;
+Ye = [Ye(1) 2*Ye(2:floor((M-1)/2)+1)];
+
+Ys = fft(hamming(M)'.*s');
+Ys = Ys/M;
+Ys = [Ys(1) 2*Ys(2:floor((M-1)/2)+1)];
 
 figure(1)
 clf
@@ -116,8 +126,34 @@ grid on
 
 figure(4)
 clf
-plot(f,abs(Y),'k')
-xlim([0 100])
+subplot(3,1,1)
+plot(f,abs(Yx),'k')
+%ylim([0 0.2])
+xlim([0 200])
+title('Frequency Response of Disturbance','FontName','Arial', 'FontSize',12)
+subplot(3,1,2)
+plot(f,abs(Ye),'k')
+ylim([0 0.2])
+xlim([0 200])
+title('Frequency Response of Disturbance Free Signal','FontName','Arial', 'FontSize',12)
+subplot(3,1,3)
+plot(f,abs(Ys),'k')
+ylim([0 0.2])
+xlim([0 200])
 title('Frequency Response of Required Signal','FontName','Arial', 'FontSize',12)
 grid on
 
+figure(5)
+clf
+subplot(2,1,1)
+plot(t,x,'k')
+ylim([-25 25])
+xlim([0 0.5])
+title('Disturbance','FontName','Arial','FontSize',12)
+grid on
+subplot(2,1,2)
+plot(t,x_d,'k')
+ylim([-25 25])
+xlim([0 0.5])
+title('Disturbance echo','FontName','Arial','FontSize',12)
+grid on
