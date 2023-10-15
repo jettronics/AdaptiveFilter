@@ -250,7 +250,53 @@
 \includegraphics[width=10cm]{../Images/mse.pdf}
 \end{figure}
 
+\begin{equation}
+\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-\beta \frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k} \nonumber
+\end{equation}
 
+\begin{equation}
+E(e_k^2) = \frac{1}{N}\sum_{k=0}^{N-1}\left(x_k-\textit{\textbf{b}}_k\textit{\textbf{X}}_k\right)^2=E\left(\left(x_k-\textit{\textbf{b}}_k\textit{\textbf{X}}_k\right)^2\right) \nonumber
+\end{equation}
+
+\begin{equation}
+E(e_k^2) = E(x_k^2)-2\textit{\textbf{b}}_k E(\textit{\textbf{X}}_k)+\textit{\textbf{b}}_k^T E(\textit{\textbf{X}}_k)^2\textit{\textbf{b}}_k\nonumber
+\end{equation}
+
+\begin{equation}
+\textit{\textbf{G}}_k=-2E(e_k{\textit{\textbf{X}}_k})\nonumber
+\end{equation}
+
+\begin{equation}
+\textit{\textbf{G}}_k=-2\:e_k\frac{1}{N}\sum_{i=0}^{N-1}x_{k-i}\xrightarrow{N=1}-2\:e_k\:x_k\nonumber
+\end{equation}
+
+\begin{equation}
+\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k+2\mu\:e_k\:x_k \nonumber
+\end{equation}
+
+\begin{equation}
+\textit{\textbf{G}}_k=\frac{dE(e_k^2)}{d\textit{\textbf{b}}_k}=2\textit{\textbf{R}}_{xx,2}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{opt}\right)\nonumber
+\end{equation}
+
+\begin{equation}
+\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-2\mu\left(\textit{\textbf{R}}_{xx,2}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{opt}\right)\right)\nonumber
+\end{equation}
+
+\begin{equation}
+\mu=\frac{1}{2}\:I\:\textit{\textbf{R}}_{xx,2}^{-1}=\frac{1}{2}\:\textit{\textbf{R}}_{xx,2}^{-1}\nonumber
+\end{equation}
+
+\begin{equation}
+0 < \mu < \frac{1}{\sum\limits_{i=0}^{N}\lambda_i}\nonumber
+\end{equation}
+
+\begin{equation}
+\sum_{i=0}^{N}\lambda_i=Spur\left(\textit{\textbf{R}}_{xx,2}\right)=\sum_{i=0}^{N}\textit{\textbf{R}}_{xx,2,ii}=(N+1)\:R_{xx}(0)=(N+1)\:\sigma_{xx}^2\nonumber
+\end{equation}
+
+\begin{equation}
+0 < \mu < \frac{1}{(N+1)\:\sigma_{xx}^2} \nonumber
+\end{equation}
 
 \chapter{Prädiktion}
 Viele Aufgaben in der digitalen Signalverarbeitung werden mit der Prädiktion realisiert. Dazu zählen Anwendungen in der Audio- und Videocodierung, Vorhersagen von Aktienkursen, 
