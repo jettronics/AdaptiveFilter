@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  5 OCT 2023 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  14 OCT 2023 13:30
 entering extended mode
 **./adaptive_filter.tex
 (adaptive_filter.tex
@@ -1069,52 +1069,51 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (adaptive_filter.toc)
-\tf@toc=\write4
-\openout4 = `adaptive_filter.toc'.
-
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-81.
+) (adaptive_filter.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-81.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-181.
+2.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-181.
+2.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 181.
+(Font)              <10> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 181.
+(Font)              <7> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 181.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 181
-.
+(Font)              <5> on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 181
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/Jens/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+))
+\tf@toc=\write4
+\openout4 = `adaptive_filter.toc'.
+
+ [1{C:/Users/Jens/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
 
@@ -1138,393 +1137,206 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
+<../Images/mse.pdf, id=15, 514.92375pt x 442.65375pt>
+File: ../Images/mse.pdf Graphic file (type pdf)
+<use ../Images/mse.pdf>
+Package pdftex.def Info: ../Images/mse.pdf  used on input line 250.
+(pdftex.def)             Requested size: 284.52756pt x 244.59503pt.
+[3 <../Images/mse.pdf>] [4
 
-Overfull \hbox (0.33687pt too wide) in paragraph at lines 192--194
+
+]
+chapter 2.
+
+Overfull \hbox (0.33687pt too wide) in paragraph at lines 262--264
 \T1/lmr/m/n/10 Die zuge-hörige zeit-diskrete Über-tra-gungs-funk-tion lautet na
 ch der z-Transformation: 
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+pzc on input line 2
-08.
+78.
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pzc.fd"
 File: ot1pzc.fd 2020/03/25 font definitions for OT1/pzc.
-)
+) [5] [6] [7]
 
-LaTeX Warning: Reference `fig:linearpredictor' on page 3 undefined on input lin
-e 249.
-
-[3]
-
-LaTeX Warning: Reference `linearcombination' on page 4 undefined on input line 
-328.
+LaTeX Warning: Command \" invalid in math mode on input line 468.
 
 
-LaTeX Warning: Reference `squaredmean' on page 4 undefined on input line 328.
+LaTeX Warning: Command \" invalid in math mode on input line 514.
 
 
-LaTeX Warning: Reference `twovariables' on page 4 undefined on input line 332.
-
-[4]
-
-LaTeX Warning: Reference `linear' on page 5 undefined on input line 336.
-
-
-LaTeX Warning: Reference `squaredmean2' on page 5 undefined on input line 336.
-
-
-LaTeX Warning: Reference `squaredmean3' on page 5 undefined on input line 336.
-
-
-LaTeX Warning: Reference `coeffopt' on page 5 undefined on input line 359.
-
-
-LaTeX Warning: Reference `coeffopt' on page 5 undefined on input line 367.
-
-[5]
-
-LaTeX Warning: Reference `matrix1' on page 6 undefined on input line 395.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 398.
-
-
-LaTeX Warning: Reference `msecoeff' on page 6 undefined on input line 400.
-
-
-LaTeX Warning: Reference `coeffopt' on page 6 undefined on input line 400.
-
-
-LaTeX Warning: Reference `alphaTobkoefficient' on page 6 undefined on input lin
-e 404.
-
-
-LaTeX Warning: Reference `alphaTobkoefficient' on page 6 undefined on input lin
-e 424.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 444.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 444.
-
-
-LaTeX Warning: Reference `matrix3' on page 6 undefined on input line 463.
-
-[6]
-
-LaTeX Warning: Command \" invalid in math mode on input line 473.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 473.
-
-
-LaTeX Warning: Reference `matrix3' on page 7 undefined on input line 475.
-
-
-LaTeX Warning: Reference `solvealpha1' on page 7 undefined on input line 475.
-
-
-LaTeX Warning: Reference `sec:dekorrelation' on page 7 undefined on input line 
-480.
-
-
-LaTeX Warning: Reference `fig:mseexample' on page 7 undefined on input line 483
-.
-
-
-LaTeX Warning: Reference `linearcombination' on page 7 undefined on input line 
-491.
-
-
-LaTeX Warning: Reference `error' on page 7 undefined on input line 491.
-
-
-LaTeX Warning: Reference `error2' on page 7 undefined on input line 499.
-
-
-LaTeX Warning: Reference `gradient' on page 7 undefined on input line 499.
-
-[7]
-
-LaTeX Warning: Reference `msederived' on page 8 undefined on input line 512.
-
-
-LaTeX Warning: Reference `coeffopt' on page 8 undefined on input line 512.
-
-
-LaTeX Warning: Reference `gradmethod' on page 8 undefined on input line 516.
+LaTeX Warning: Command \" invalid in math mode on input line 514.
 
 [8]
 
-LaTeX Warning: Reference `gradmethod2' on page 9 undefined on input line 543.
+LaTeX Warning: Command \" invalid in math mode on input line 543.
 
 
-LaTeX Warning: Reference `squaredmean' on page 9 undefined on input line 545.
+LaTeX Warning: Command \" invalid in math mode on input line 543.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--546
+LaTeX Warning: Reference `fig:mseexample' on page 9 undefined on input line 553
+.
+
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 612--616
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 645--648
 
  []
 
 
-LaTeX Warning: Reference `runsigma2' on page 9 undefined on input line 565.
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 575--578
-
- []
-
-
-Overfull \hbox (10.85489pt too wide) in paragraph at lines 592--594
+Overfull \hbox (10.85489pt too wide) in paragraph at lines 662--664
 \T1/lmr/m/n/10 berück-sichtigt wird zeigt Ab-bil-dung mitte. Das Aus-gangssig-n
 al ist das gle-iche Rauschsig-
  []
 
 
-LaTeX Warning: Reference `fig:predictionfilter' on page 10 undefined on input l
-ine 599.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 597--661
-
- []
-
-[10]
-
-LaTeX Warning: Reference `fig:linearpredictor' on page 11 undefined on input li
-ne 663.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_with_noise' on page 11 undefined on in
-put line 664.
-
-
-LaTeX Warning: Reference `linearcombination' on page 11 undefined on input line
- 668.
-
-
-LaTeX Warning: Reference `gradmethod2' on page 11 undefined on input line 668.
-
-
-LaTeX Warning: Reference `initsigma' on page 11 undefined on input line 681.
-
-
-LaTeX Warning: Reference `runsigma2' on page 11 undefined on input line 681.
-
-
-LaTeX Warning: Reference `maxmu' on page 11 undefined on input line 681.
-
-
-LaTeX Warning: Reference `gradmethod2' on page 11 undefined on input line 681.
-
-
-LaTeX Warning: Reference `linearcombination' on page 11 undefined on input line
- 681.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 11 undefined on
- input line 683.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 11 undefined on
- input line 684.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 11 undefined on
- input line 685.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 667--686
-
- []
-
-
-Overfull \hbox (3.30887pt too wide) in paragraph at lines 667--686
-\T1/lmr/m/n/10 Der Al-go-rith-mus zur adap-tiven Prädik-tion setzt sich aus fol
--gen-den Op-er-a-tio-nen zusam-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 667--686
-
- []
-
-
-Overfull \hbox (12.66666pt too wide) in paragraph at lines 667--686
-[][][][][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 667--686
-
- []
-
-[11]
-
-LaTeX Warning: Reference `fig:decorrelationfilter' on page 12 undefined on inpu
-t line 697.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 696--761
-
- []
-
-
-LaTeX Warning: Reference `linearcombination' on page 12 undefined on input line
- 763.
-
-
-LaTeX Warning: Reference `fig:linearpredictor' on page 12 undefined on input li
-ne 763.
-
-
-LaTeX Warning: Reference `sec:gradientenverfahren' on page 12 undefined on inpu
-t line 763.
-
-
-LaTeX Warning: Reference `gradmethod2' on page 12 undefined on input line 765.
-
-
-LaTeX Warning: Reference `fig:decorrelationfilter' on page 12 undefined on inpu
-t line 770.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 12 undefined on 
-input line 770.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 768--771
+Underfull \hbox (badness 10000) in paragraph at lines 667--731
 
  []
 
 [12]
 
-LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 13 undefined on 
-input line 776.
+LaTeX Warning: Reference `fig:ecg_signal_with_noise' on page 13 undefined on in
+put line 734.
 
 
-LaTeX Warning: Reference `fig:quantdecorrelationfilter' on page 13 undefined on
- input line 776.
+LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 13 undefined on
+ input line 753.
 
 
-Overfull \hbox (4.22456pt too wide) in paragraph at lines 776--777
+LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 13 undefined on
+ input line 754.
+
+
+LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 13 undefined on
+ input line 755.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--756
+
+ []
+
+
+Overfull \hbox (3.30887pt too wide) in paragraph at lines 737--756
+\T1/lmr/m/n/10 Der Al-go-rith-mus zur adap-tiven Prädik-tion setzt sich aus fol
+-gen-den Op-er-a-tio-nen zusam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--756
+
+ []
+
+
+Overfull \hbox (12.66666pt too wide) in paragraph at lines 737--756
+[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--756
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 766--831
+
+ []
+
+
+LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 14 undefined on 
+input line 840.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 838--841
+
+ []
+
+[14]
+
+LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 15 undefined on 
+input line 846.
+
+
+Overfull \hbox (4.22456pt too wide) in paragraph at lines 846--847
 \T1/lmr/m/n/10 Um eine Datenkom-pres-sion mit-tels einer En-tro-piecodierung be
 ispiel-sweise durch führen
  []
 
 
-LaTeX Warning: Reference `fig:decorrelationfilter' on page 13 undefined on inpu
-t line 868.
+LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 15 undefin
+ed on input line 938.
 
 
-LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 13 undefin
-ed on input line 868.
-
-
-Overfull \hbox (1.21489pt too wide) in paragraph at lines 867--869
+Overfull \hbox (3.13165pt too wide) in paragraph at lines 937--939
 \T1/lmr/m/n/10 Im Prinzip baut diese Struk-tur auf die Struk-tur in Ab-bil-dung
- [] auf. Neu hinzugekom-
+ 2.4[] auf. Neu hinzugekom-
  []
 
 
-LaTeX Warning: Reference `fig:quantdecorrelationfilter' on page 13 undefined on
- input line 872.
-
-
-LaTeX Warning: Reference `initsigma' on page 13 undefined on input line 886.
-
-
-LaTeX Warning: Reference `runsigma2' on page 13 undefined on input line 886.
-
-
-LaTeX Warning: Reference `maxmu' on page 13 undefined on input line 886.
-
-
-LaTeX Warning: Reference `gradmethod2' on page 13 undefined on input line 886.
-
-
-LaTeX Warning: Reference `decorrate' on page 13 undefined on input line 886.
-
-
-LaTeX Warning: Reference `linearcombination' on page 13 undefined on input line
- 886.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 870--887
+Underfull \hbox (badness 10000) in paragraph at lines 940--957
 
  []
 
 
-Overfull \hbox (22.66666pt too wide) in paragraph at lines 870--887
+Overfull \hbox (22.66666pt too wide) in paragraph at lines 940--957
 [][][][][][] 
- []
-
-[13]
-
-LaTeX Warning: Reference `fig:linearpredictor' on page 14 undefined on input li
-ne 888.
-
-
-LaTeX Warning: Reference `linearcombination' on page 14 undefined on input line
- 895.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated' on page 14 unde
-fined on input line 899.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated_poles' on page 1
-4 undefined on input line 901.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 14 undefin
-ed on input line 909.
-
-[14]
-
-LaTeX Warning: Reference `fig:quantdecorrelationfilter' on page 15 undefined on
- input line 913.
-
-
-Overfull \hbox (1.60399pt too wide) in paragraph at lines 911--914
-\T1/lmr/m/n/10 um den Fak-tor 4.73. Dies kann auch ve-r-an-schaulicht wer-den i
-n-dem man die Maximum-
  []
 
 [15]
 
+LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated' on page 16 unde
+fined on input line 969.
+
+
+LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated_poles' on page 1
+6 undefined on input line 971.
+
+
+LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 16 undefin
+ed on input line 979.
+
+[16]
+Overfull \hbox (1.60399pt too wide) in paragraph at lines 981--984
+\T1/lmr/m/n/10 um den Fak-tor 4.73. Dies kann auch ve-r-an-schaulicht wer-den i
+n-dem man die Maximum-
+ []
+
+[17]
+
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     917.
+(LaTeX3)     987.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     917.
+(LaTeX3)     987.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     917.
+(LaTeX3)     987.
 
  (adaptive_filter.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 24133 strings out of 479799
- 501935 string characters out of 2879601
- 930064 words of memory out of 3000000
- 40691 multiletter control sequences out of 15000+200000
+ 24142 strings out of 479799
+ 502102 string characters out of 2879601
+ 931038 words of memory out of 3000000
+ 40698 multiletter control sequences out of 15000+200000
  599154 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,20n,111p,10612b,1048s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 106i,20n,111p,10612b,1040s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTe
-X/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/
-lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Program File
-s/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dv
-ips/lm/lm-mathex.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
+X/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/bas
+e/8r.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program 
+Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/en
+c/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/Mi
 KTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/P
@@ -1535,9 +1347,9 @@ s/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pf
 b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/Mi
 KTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on adaptive_filter.pdf (15 pages, 256274 bytes).
+Output written on adaptive_filter.pdf (17 pages, 337341 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

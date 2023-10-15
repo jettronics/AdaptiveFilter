@@ -180,6 +180,78 @@
 
 \newpage
 
+\chapter{Apative Filter}
+
+\section{Filter structure}
+\begin{figure}[htbp]
+\begin{tikzpicture}
+	% Place nodes using a matrix
+	\matrix (m1) [row sep=2.5mm, column sep=5mm]
+	{
+		%--------------------------------------------------------------------
+		\node[coordinate]                  (m00) {};          &
+		\node[coordinate]                  (m01) {};          &
+		\node[coordinate]                  (m02) {};          &
+		\node[coordinate]                  (m03) {};          &
+		\node[coordinate]                  (m04) {};          &
+		\node[coordinate]                  (m05) {};          &
+		\node[dspnodeopen,dsp/label=above] (m06) {$d_k$};    &
+		\node[coordinate]                  (m07) {};          &
+		\node[coordinate]                   (m08) {}; &
+		\node[coordinate]                   (m09) {};          \\
+		%--------------------------------------------------------------------
+		\\
+		\\
+		%--------------------------------------------------------------------
+		\node[dspnodeopen,dsp/label=above] (m20) {$x_k$};    &
+		\node[coordinate]                  (m21) {};          &
+		\node[dspnodefull]                  (m22) {};          &
+		\node[coordinate]                  (m23) {};          &
+		\node[dspsquare, minimum size=1cm, , inner xsep=10pt]                  (m24) {Filter};          &
+		\node[coordinate]                 (m25) {};          &
+		\node[dspadder]                    (m26) {};          &
+		\node[dspnodefull]                 (m27) {};          &
+		\node[coordinate]                   (m28) {}; &
+		\node[dspnodeopen,dsp/label=above]  (m29) {$e_k$};          \\
+		%--------------------------------------------------------------------
+		\\
+		\\
+		%--------------------------------------------------------------------
+		\node[coordinate]                  (m40) {};          &
+		\node[coordinate]                  (m41) {};          &
+		\node[coordinate]                  (m42) {};          &
+		\node[coordinate]                  (m43) {};          &
+		\node[dspfilter, minimum size=1.2cm, text height=2em, inner xsep=10pt]                  (m44) {Update\\ algorithm};          &
+		\node[coordinate]                    (m45) {};          &
+		\node[coordinate]                    (m46) {};          &
+		\node[coordinate]                    (m47) {};          &
+		\node[coordinate]                    (m48) {};          &
+		\node[coordinate]                    (m49) {};          \\
+		%--------------------------------------------------------------------
+	};
+	\draw[dspflow] (m20) -- (m22);
+	\draw[dspconn] (m22) -- (m24);
+	\draw[dspflow] (m27) -- (m29);
+          \draw[dspline] (m22) -- (m42);
+	\draw[dspconn] (m42) -- (m44);
+           \draw[dspflow] (m24) -- node[midway,above] {$-\hat{x}_k$} (m26);
+	\draw[dspline] (m27) -- (m47);
+	\draw[dspline] (m26) -- (m27);
+	\draw[dspconn] (m47) -- (m44);
+	\draw[dspflow] (m06) -- (m26);
+           \draw[dspconn] (m44) -- node[midway,right] {$\textit{\textbf{b}}_{k+1}$} (m24);
+\end{tikzpicture}
+\end{figure}
+
+\section{Least Mean Square algorithm}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{../Images/mse.pdf}
+\end{figure}
+
+
+
 \chapter{Prädiktion}
 Viele Aufgaben in der digitalen Signalverarbeitung werden mit der Prädiktion realisiert. Dazu zählen Anwendungen in der Audio- und Videocodierung, Vorhersagen von Aktienkursen, 
 Störunterdrückung und überall dort wo Schätzungen von Signalwerten durchgeführt werden müssen.
