@@ -259,15 +259,15 @@ E(e_k^2) = \frac{1}{N}\sum_{k=0}^{N-1}\left(x_k-\textit{\textbf{b}}_k\textit{\te
 \end{equation}
 
 \begin{equation}
-E(e_k^2) = E(x_k^2)-2\textit{\textbf{b}}_k E(\textit{\textbf{X}}_k)+\textit{\textbf{b}}_k^T E(\textit{\textbf{X}}_k)^2\textit{\textbf{b}}_k\nonumber
+E(e_k^2) = E(x_k^2)-2\textit{\textbf{b}}_k E(\textit{\textbf{X}}_k)+\textit{\textbf{b}}_k^T E(\textit{\textbf{X}}_k^2)\textit{\textbf{b}}_k\nonumber
 \end{equation}
 
 \begin{equation}
-\textit{\textbf{G}}_k=-2E(e_k{\textit{\textbf{X}}_k})\nonumber
+\frac{\partial E(e_k^2) }{\partial \textit{\textbf{b}}_k}= -2 E(\textit{\textbf{X}}_k)+2 \textit{\textbf{b}}_k E(\textit{\textbf{X}}_k^2)\nonumber
 \end{equation}
 
 \begin{equation}
-\textit{\textbf{G}}_k=-2\:e_k\frac{1}{N}\sum_{i=0}^{N-1}x_{k-i}\xrightarrow{N=1}-2\:e_k\:x_k\nonumber
+\frac{\partial E(e_k^2) }{\partial \textit{\textbf{b}}_k}= -2 \underbrace{E(\textit{\textbf{X}}_k)}_\text{\clap{no mean value}}+2 \textit{\textbf{b}}_k E(\textit{\textbf{X}}_k^2)\nonumber
 \end{equation}
 
 \begin{equation}
