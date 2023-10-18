@@ -251,7 +251,7 @@
 \end{figure}
 
 \begin{equation}
-\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-\beta \frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k} \nonumber
+\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-\beta \frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k}
 \end{equation}
 
 \begin{equation}
@@ -267,15 +267,15 @@ E(e_k^2) = E(x_k^2)-2\textit{\textbf{b}}_k E(\textit{\textbf{X}}_k)+\textit{\tex
 \end{equation}
 
 \begin{equation}
-\frac{\partial E(e_k^2) }{\partial \textit{\textbf{b}}_k}= -2 \underbrace{E(\textit{\textbf{X}}_k)}_\text{\clap{no mean value}}+2 \textit{\textbf{b}}_k E(\textit{\textbf{X}}_k^2)\nonumber
+\frac{\partial E(e_k^2) }{\partial \textit{\textbf{b}}_k}= -2 \underbrace{E(\textit{\textbf{X}}_k)}_\text{\clap{mean value free}}+2 \textit{\textbf{b}}_k \underbrace{E(\textit{\textbf{X}}_k^2)}_\text{\clap{$R_{xx,k}$}}\nonumber
 \end{equation}
 
 \begin{equation}
-\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k+2\mu\:e_k\:x_k \nonumber
+\frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k}=2\textit{\textbf{R}}_{xx,k}\textit{\textbf{b}}_k\nonumber
 \end{equation}
 
 \begin{equation}
-\textit{\textbf{G}}_k=\frac{dE(e_k^2)}{d\textit{\textbf{b}}_k}=2\textit{\textbf{R}}_{xx,2}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{opt}\right)\nonumber
+\frac{\Delta E(e_k^2)}{\Delta \textit{\textbf{b}}_k}=2\textit{\textbf{R}}_{xx,k}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{k-1}\right)\nonumber
 \end{equation}
 
 \begin{equation}
