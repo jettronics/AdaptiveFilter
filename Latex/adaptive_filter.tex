@@ -275,27 +275,27 @@ E(e_k^2) = E(x_k^2)-2\textit{\textbf{b}}_k E(\textit{\textbf{X}}_k)+\textit{\tex
 \end{equation}
 
 \begin{equation}
-\frac{\Delta E(e_k^2)}{\Delta \textit{\textbf{b}}_k}=2\textit{\textbf{R}}_{xx,k}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{k-1}\right)\nonumber
+\frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k} \approx \frac{\Delta E(e_k^2)}{\Delta \textit{\textbf{b}}_k}=2\textit{\textbf{R}}_{xx,k}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{k-1}\right)\nonumber
 \end{equation}
 
 \begin{equation}
-\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-2\mu\left(\textit{\textbf{R}}_{xx,2}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{opt}\right)\right)\nonumber
+\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-2\beta \textit{\textbf{R}}_{xx,k}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{k-1}\right)\nonumber
 \end{equation}
 
 \begin{equation}
-\mu=\frac{1}{2}\:I\:\textit{\textbf{R}}_{xx,2}^{-1}=\frac{1}{2}\:\textit{\textbf{R}}_{xx,2}^{-1}\nonumber
+\beta=\frac{1}{2}\:I\:\textit{\textbf{R}}_{xx,k}^{-1} \xrightarrow{n\:x\:n} \beta=\frac{1}{2}\:\textit{\textbf{R}}_{xx,k}^{-1}\nonumber
 \end{equation}
 
 \begin{equation}
-0 < \mu < \frac{1}{\sum\limits_{i=0}^{N}\lambda_i}\nonumber
+0 < \beta < \textit{\textbf{R}}_{xx,k}^{-1} \nonumber
+\end{equation}
+Convergence at sum of $\textit{\textbf{R}}_{xx,k}$  intrinsic values 
+\begin{equation}
+(N+1)\:R_{xx}(0)=(N+1)\:\sigma_{xx}^2\nonumber
 \end{equation}
 
 \begin{equation}
-\sum_{i=0}^{N}\lambda_i=Spur\left(\textit{\textbf{R}}_{xx,2}\right)=\sum_{i=0}^{N}\textit{\textbf{R}}_{xx,2,ii}=(N+1)\:R_{xx}(0)=(N+1)\:\sigma_{xx}^2\nonumber
-\end{equation}
-
-\begin{equation}
-0 < \mu < \frac{1}{(N+1)\:\sigma_{xx}^2} \nonumber
+0 < \beta < \frac{1}{(N+1)\:\sigma_{xx}^2} \nonumber
 \end{equation}
 
 \chapter{Prädiktion}
