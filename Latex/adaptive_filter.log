@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  7 NOV 2023 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  7 NOV 2023 20:06
 entering extended mode
 **./adaptive_filter.tex
 (adaptive_filter.tex
@@ -973,8 +973,8 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 17
-7.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 19
+2.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -991,24 +991,24 @@ LaTeX Warning: Label `error' multiply defined.
 )
 \openout1 = `adaptive_filter.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-Package scrbase Info: activating english \contentsname on input line 177.
-Package scrbase Info: activating english \listfigurename on input line 177.
-Package scrbase Info: activating english \listtablename on input line 177.
-Package tocbasic Info: usage of `tocbibind' detected on input line 177.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+Package scrbase Info: activating english \contentsname on input line 192.
+Package scrbase Info: activating english \listfigurename on input line 192.
+Package scrbase Info: activating english \listtablename on input line 192.
+Package tocbasic Info: usage of `tocbibind' detected on input line 192.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1069,7 +1069,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count320
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-79.
+94.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1142,14 +1142,14 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 LaTeX Font Info:    Trying to load font information for OT1+pzc on input line 2
-65.
+80.
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pzc.fd"
 File: ot1pzc.fd 2020/03/25 font definitions for OT1/pzc.
 )
 <../Images/mse.pdf, id=15, 514.92375pt x 442.65375pt>
 File: ../Images/mse.pdf Graphic file (type pdf)
 <use ../Images/mse.pdf>
-Package pdftex.def Info: ../Images/mse.pdf  used on input line 316.
+Package pdftex.def Info: ../Images/mse.pdf  used on input line 331.
 (pdftex.def)             Requested size: 284.52756pt x 244.59503pt.
 
 Underfull \vbox (badness 1817) has occurred while \output is active []
@@ -1161,156 +1161,156 @@ Underfull \vbox (badness 1817) has occurred while \output is active []
 ]
 chapter 2.
 
-Overfull \hbox (0.33687pt too wide) in paragraph at lines 382--384
+Overfull \hbox (0.33687pt too wide) in paragraph at lines 401--403
 \T1/lmr/m/n/10 Die zuge-hörige zeit-diskrete Über-tra-gungs-funk-tion lautet na
 ch der z-Transformation: 
  []
 
 [7] [8] [9]
 
-LaTeX Warning: Command \" invalid in math mode on input line 588.
+LaTeX Warning: Command \" invalid in math mode on input line 607.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 634.
+LaTeX Warning: Command \" invalid in math mode on input line 653.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 634.
+LaTeX Warning: Command \" invalid in math mode on input line 653.
 
 [10]
 
-LaTeX Warning: Command \" invalid in math mode on input line 663.
+LaTeX Warning: Command \" invalid in math mode on input line 682.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 663.
+LaTeX Warning: Command \" invalid in math mode on input line 682.
 
 
-LaTeX Warning: Reference `fig:mseexample' on page 11 undefined on input line 67
-3.
+LaTeX Warning: Reference `fig:mseexample' on page 11 undefined on input line 69
+2.
 
 [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 732--736
+Underfull \hbox (badness 10000) in paragraph at lines 751--755
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 765--768
+Underfull \hbox (badness 10000) in paragraph at lines 784--787
 
  []
 
 
-Overfull \hbox (10.85489pt too wide) in paragraph at lines 782--784
+Overfull \hbox (10.85489pt too wide) in paragraph at lines 801--803
 \T1/lmr/m/n/10 berück-sichtigt wird zeigt Ab-bil-dung mitte. Das Aus-gangssig-n
 al ist das gle-iche Rauschsig-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--851
+Underfull \hbox (badness 10000) in paragraph at lines 806--870
 
  []
 
 [14]
 
 LaTeX Warning: Reference `fig:ecg_signal_with_noise' on page 15 undefined on in
-put line 854.
+put line 873.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
- input line 873.
+ input line 892.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
- input line 874.
+ input line 893.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
- input line 875.
+ input line 894.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 857--876
+Underfull \hbox (badness 10000) in paragraph at lines 876--895
 
  []
 
 
-Overfull \hbox (3.30887pt too wide) in paragraph at lines 857--876
+Overfull \hbox (3.30887pt too wide) in paragraph at lines 876--895
 \T1/lmr/m/n/10 Der Al-go-rith-mus zur adap-tiven Prädik-tion setzt sich aus fol
 -gen-den Op-er-a-tio-nen zusam-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 857--876
+Underfull \hbox (badness 10000) in paragraph at lines 876--895
 
  []
 
 
-Overfull \hbox (12.66666pt too wide) in paragraph at lines 857--876
+Overfull \hbox (12.66666pt too wide) in paragraph at lines 876--895
 [][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 857--876
+Underfull \hbox (badness 10000) in paragraph at lines 876--895
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 886--951
+Underfull \hbox (badness 10000) in paragraph at lines 905--970
 
  []
 
 
 LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 16 undefined on 
-input line 960.
+input line 979.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 958--961
+Underfull \hbox (badness 10000) in paragraph at lines 977--980
 
  []
 
 [16]
 
 LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 17 undefined on 
-input line 966.
+input line 985.
 
 
-Overfull \hbox (4.22456pt too wide) in paragraph at lines 966--967
+Overfull \hbox (4.22456pt too wide) in paragraph at lines 985--986
 \T1/lmr/m/n/10 Um eine Datenkom-pres-sion mit-tels einer En-tro-piecodierung be
 ispiel-sweise durch führen
  []
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 17 undefin
-ed on input line 1058.
+ed on input line 1077.
 
 
-Overfull \hbox (3.13165pt too wide) in paragraph at lines 1057--1059
+Overfull \hbox (3.13165pt too wide) in paragraph at lines 1076--1078
 \T1/lmr/m/n/10 Im Prinzip baut diese Struk-tur auf die Struk-tur in Ab-bil-dung
  2.4[] auf. Neu hinzugekom-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1077
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1096
 
  []
 
 
-Overfull \hbox (22.66666pt too wide) in paragraph at lines 1060--1077
+Overfull \hbox (22.66666pt too wide) in paragraph at lines 1079--1096
 [][][][][][] 
  []
 
 [17]
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated' on page 18 unde
-fined on input line 1089.
+fined on input line 1108.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated_poles' on page 1
-8 undefined on input line 1091.
+8 undefined on input line 1110.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 18 undefin
-ed on input line 1099.
+ed on input line 1118.
 
 [18]
-Overfull \hbox (1.60399pt too wide) in paragraph at lines 1101--1104
+Overfull \hbox (1.60399pt too wide) in paragraph at lines 1120--1123
 \T1/lmr/m/n/10 um den Fak-tor 4.73. Dies kann auch ve-r-an-schaulicht wer-den i
 n-dem man die Maximum-
  []
@@ -1318,15 +1318,15 @@ n-dem man die Maximum-
 [19]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1107.
+(LaTeX3)     1126.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1107.
+(LaTeX3)     1126.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1107.
+(LaTeX3)     1126.
 
  (adaptive_filter.aux)
 
@@ -1337,10 +1337,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24142 strings out of 479799
- 502102 string characters out of 2879601
- 935066 words of memory out of 3000000
- 40698 multiletter control sequences out of 15000+200000
+ 24144 strings out of 479799
+ 502115 string characters out of 2879601
+ 935519 words of memory out of 3000000
+ 40700 multiletter control sequences out of 15000+200000
  599154 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,20n,111p,10612b,1040s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1359,7 +1359,7 @@ s/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pf
 b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/Mi
 KTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on adaptive_filter.pdf (19 pages, 349971 bytes).
+Output written on adaptive_filter.pdf (19 pages, 350476 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

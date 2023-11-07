@@ -174,6 +174,21 @@
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
+\newcommand{\microphone}{%
+    \tikz{
+        \begin{scope}
+            \clip (-.3em,-.4ex) rectangle (1.3em,1.5ex);
+            \fill[black, rounded corners=1.5ex] (-.3em,-.4ex) rectangle (1.3em,5.5ex);
+        \end{scope}
+        \fill[white, rounded corners=1.3ex] (-.1em,0) rectangle (1.1em,5.1ex);
+        \fill[black, rounded corners=1.1ex] (0,.2ex) rectangle (1em,5ex);
+        \foreach \pos in {2.5ex, 2.9ex, 3.3ex, 3.7ex}
+            \fill[white, rounded corners=.1ex] (.35em,\pos) rectangle +(.8em,.25ex);
+        \fill[black] (.4em,-.4ex) rectangle (.6em,-1.5ex);
+        \fill[black] (0,-1.5ex) rectangle (1em,-2ex);
+    }%
+}
+
 \begin{document}
 %\maketitle
 \tableofcontents 
@@ -369,6 +384,10 @@ Convergence at sum of $\textit{\textbf{R}}_{xx,k}$  intrinsic values
 \begin{equation}
 0 < \beta < \frac{1}{(N+1)\:\sigma_{xx}^2} \nonumber
 \end{equation}
+
+\section{Noise and Echo cancellation}
+
+
 
 \chapter{Prädiktion}
 Viele Aufgaben in der digitalen Signalverarbeitung werden mit der Prädiktion realisiert. Dazu zählen Anwendungen in der Audio- und Videocodierung, Vorhersagen von Aktienkursen, 
