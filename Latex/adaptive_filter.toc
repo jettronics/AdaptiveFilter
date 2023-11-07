@@ -1,18 +1,19 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Apative Filter}{3}{}%
 \contentsline {section}{\numberline {1.1}Filter structure}{3}{}%
-\contentsline {section}{\numberline {1.2}Least Mean Square algorithm}{3}{}%
-\contentsline {chapter}{\numberline {2}Prädiktion}{5}{}%
-\contentsline {section}{\numberline {2.1}Linearer Prädiktor}{5}{}%
-\contentsline {section}{\numberline {2.2}Bestimmung des Schätzfehlers}{6}{}%
-\contentsline {section}{\numberline {2.3}Optimale Filterkoeffizienten}{7}{}%
-\contentsline {section}{\numberline {2.4}Levinson-Durbin-Algorithmus}{7}{}%
-\contentsline {section}{\numberline {2.5}Least-Mean-Square-Algorithmus}{9}{}%
-\contentsline {section}{\numberline {2.6}Effiziente Varianz Berechnung}{11}{}%
-\contentsline {section}{\numberline {2.7}Störunterdrückung}{12}{}%
-\contentsline {section}{\numberline {2.8}Dekorrelation}{14}{}%
-\contentsline {subsection}{\numberline {2.8.1}Dekorrelation mittels Prädiktion}{14}{}%
-\contentsline {subsection}{\numberline {2.8.2}Quantisierte Prädiktion}{15}{}%
-\contentsline {subsection}{\numberline {2.8.3}Signalrückgewinnung}{16}{}%
-\contentsline {subsection}{\numberline {2.8.4}Prädiktionsgewinn}{16}{}%
+\contentsline {section}{\numberline {1.2}Predictor}{3}{}%
+\contentsline {section}{\numberline {1.3}Update Algorithm}{3}{}%
+\contentsline {chapter}{\numberline {2}Prädiktion}{7}{}%
+\contentsline {section}{\numberline {2.1}Linearer Prädiktor}{7}{}%
+\contentsline {section}{\numberline {2.2}Bestimmung des Schätzfehlers}{8}{}%
+\contentsline {section}{\numberline {2.3}Optimale Filterkoeffizienten}{9}{}%
+\contentsline {section}{\numberline {2.4}Levinson-Durbin-Algorithmus}{9}{}%
+\contentsline {section}{\numberline {2.5}Least-Mean-Square-Algorithmus}{11}{}%
+\contentsline {section}{\numberline {2.6}Effiziente Varianz Berechnung}{13}{}%
+\contentsline {section}{\numberline {2.7}Störunterdrückung}{14}{}%
+\contentsline {section}{\numberline {2.8}Dekorrelation}{16}{}%
+\contentsline {subsection}{\numberline {2.8.1}Dekorrelation mittels Prädiktion}{16}{}%
+\contentsline {subsection}{\numberline {2.8.2}Quantisierte Prädiktion}{17}{}%
+\contentsline {subsection}{\numberline {2.8.3}Signalrückgewinnung}{18}{}%
+\contentsline {subsection}{\numberline {2.8.4}Prädiktionsgewinn}{18}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

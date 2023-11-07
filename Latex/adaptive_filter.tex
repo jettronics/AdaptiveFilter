@@ -207,7 +207,7 @@
 		\node[coordinate]                  (m21) {};          &
 		\node[dspnodefull]                  (m22) {};          &
 		\node[coordinate]                  (m23) {};          &
-		\node[dspsquare, minimum size=1cm, , inner xsep=10pt]                  (m24) {Filter};          &
+		\node[dspsquare, minimum size=1cm, , inner xsep=10pt]                  (m24) {Predictor};          &
 		\node[coordinate]                 (m25) {};          &
 		\node[dspadder]                    (m26) {};          &
 		\node[dspnodefull]                 (m27) {};          &
@@ -243,7 +243,73 @@
 \end{tikzpicture}
 \end{figure}
 
-\section{Least Mean Square algorithm}
+\section{Predictor}
+
+\begin{equation}
+\hat{x}_k=\sum_{i=0}^{N} b_i\:x_{k-i}\nonumber
+\end{equation}
+
+\begin{equation}
+H(z)=\frac{\hat{X}(z)}{X(z)}=\sum_{i=0}^{N} b_i\:z^{-i}=b_0+b_1z^{-1}+\dots+b_N+z^{-N}\nonumber
+\end{equation}
+
+\begin{figure}[htbp]
+\begin{tikzpicture}
+	% Place nodes using a matrix
+	\matrix (m1) [row sep=2.5mm, column sep=5mm]
+	{
+		%--------------------------------------------------------------------
+		\node[dspnodeopen,dsp/label=above] (m00) {$x_k$};    &
+		\node[coordinate]                  (m01) {};          &
+		\node[dspnodefull]                 (m02) {};          &
+		\node[dspsquare]                   (m03) {$\z^{-1}$}; &
+		\node[dspnodefull]                 (m04) {};          &
+		\node[dspsquare]                   (m05) {$\z^{-1}$}; &
+		\node[dspnodefull]                 (m06) {};          &
+		\node[dspsquare]                   (m07) {$\z^{-1}$}; &
+		\node[coordinate]                  (m08) {};          &
+		\node[coordinate]                  (m09) {};          &
+		\node[coordinate]                  (m0X) {};          \\
+		%--------------------------------------------------------------------
+		\\
+		\\
+		%--------------------------------------------------------------------
+		\node[coordinate]                  (m20) {};          &
+		\node[coordinate]                  (m21) {};          &
+		\node[coordinate]                  (m22) {};          &
+		\node[coordinate]                  (m23) {};          &
+		\node[dspadder]                    (m24) {};          &
+		\node[coordinate]                  (m25) {};          &
+		\node[dspadder]                    (m26) {};          &
+		\node[coordinate]                  (m27) {};          &
+		\node[dspadder]                    (m28) {};          &
+		\node[coordinate]                  (m29) {};          &
+		\node[dspnodeopen,dsp/label=above] (m2X) {$\hat{x}_k$};    \\
+		%--------------------------------------------------------------------
+	};
+	\draw[dspflow] (m00) -- (m02);
+	\draw[dspconn] (m02) -- (m03);
+	\draw[dspflow] (m02) -- node[midway,right] {$b_0$} (m22);
+          \draw[dspconn] (m22) -- (m24);
+          \draw[dspconn] (m03) -- (m05);
+          	\draw[dspflow] (m04) -- node[midway,right] {$b_1$} (m24);
+          \draw[dspconn] (m05) -- (m07);
+          	\draw[dspflow] (m06) -- node[midway,right] {$b_2$} (m26);
+          \draw[dspconn] (m24) -- (m26);
+          \draw[dspconn] (m26) --  (m28);
+          	\draw[dspflow] (m08) -- node[midway,right] {$b_3$} (m28);
+          	\draw[dspflow] (m28) -- (m2X);
+          \draw[dspline] (m07) -- (m08);
+\end{tikzpicture}
+\end{figure}
+
+\begin{equation}\label{error}
+e_k=d_k-\hat{x}_k
+\end{equation}
+
+\section{Update Algorithm}
+
+Least Mean Square algorithm
 
 \begin{figure}[H]
 \centering
@@ -251,7 +317,7 @@
 \end{figure}
 
 \begin{equation}
-\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-\beta \frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k}
+\textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-\beta \frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k}\nonumber
 \end{equation}
 
 \begin{equation}
@@ -281,6 +347,12 @@ E(e_k^2) = E(x_k^2)-2\textit{\textbf{b}}_k E(\textit{\textbf{X}}_k)+\textit{\tex
 \begin{equation}
 \textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-2\beta \textit{\textbf{R}}_{xx,k}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{k-1}\right)\nonumber
 \end{equation}
+
+Optimum reached/exceeded by
+\begin{equation}
+\frac{\textit{\textbf{b}}_{k+1}-\textit{\textbf{b}}_{k}}{\textit{\textbf{b}}_{k}-\textit{\textbf{b}}_{k-1}}\leq 0 \rightarrow -1\nonumber
+\end{equation}
+
 
 \begin{equation}
 \beta=\frac{1}{2}\:I\:\textit{\textbf{R}}_{xx,k}^{-1} \xrightarrow{n\:x\:n} \beta=\frac{1}{2}\:\textit{\textbf{R}}_{xx,k}^{-1}\nonumber
