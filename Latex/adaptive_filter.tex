@@ -385,9 +385,32 @@ Convergence at sum of $\textit{\textbf{R}}_{xx,k}$  intrinsic values
 0 < \beta < \frac{1}{(N+1)\:\sigma_{xx}^2} \nonumber
 \end{equation}
 
-\section{Noise and Echo cancellation}
+\begin{equation}
+\frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k}=E\left(\frac{\partial e_k^2}{\partial \textit{\textbf{b}}_k}\right)\nonumber
+\end{equation}
 
+\begin{equation}
+\frac{\partial e_k^2}{\partial \textit{\textbf{b}}_k}=2e_k\frac{de_k}{d \textit{\textbf{b}}_k} \nonumber
+\end{equation}
 
+\begin{equation}
+e_k=x_k-\textit{\textbf{b}}_k \textit{\textbf{X}}_k \nonumber
+\end{equation}
+
+\begin{equation}
+\frac{\partial e_k^2}{\partial \textit{\textbf{b}}_k}=2e_k(-\textit{\textbf{X}}_k)\nonumber
+\end{equation}
+
+\begin{equation}
+\frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k}=-2E(e_k\textit{\textbf{X}}_k)=-2e_k \frac{1}{N}\sum_{i=0}^{N-1}x_{k-i}\xrightarrow{N=1}-2e_kx_k\nonumber
+\end{equation}
+
+\section{Echo and Noise cancellation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{../Images/EchoNoiseCancellation.jpg}
+\end{figure}
 
 \chapter{Prädiktion}
 Viele Aufgaben in der digitalen Signalverarbeitung werden mit der Prädiktion realisiert. Dazu zählen Anwendungen in der Audio- und Videocodierung, Vorhersagen von Aktienkursen, 

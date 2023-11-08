@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  7 NOV 2023 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  8 NOV 2023 17:42
 entering extended mode
 **./adaptive_filter.tex
 (adaptive_filter.tex
@@ -1155,162 +1155,173 @@ Package pdftex.def Info: ../Images/mse.pdf  used on input line 331.
 Underfull \vbox (badness 1817) has occurred while \output is active []
 
  [3]
-[4 <../Images/mse.pdf>] [5] [6
+[4 <../Images/mse.pdf>]
+<../Images/EchoNoiseCancellation.jpg, id=35, 376.7676pt x 233.673pt>
+File: ../Images/EchoNoiseCancellation.jpg Graphic file (type jpg)
+<use ../Images/EchoNoiseCancellation.jpg>
+Package pdftex.def Info: ../Images/EchoNoiseCancellation.jpg  used on input lin
+e 412.
+(pdftex.def)             Requested size: 284.52756pt x 176.47017pt.
 
+Underfull \vbox (badness 5189) has occurred while \output is active []
 
-]
+ [5]
+[6 <../Images/EchoNoiseCancellation.jpg>]
 chapter 2.
 
-Overfull \hbox (0.33687pt too wide) in paragraph at lines 401--403
+Overfull \hbox (0.33687pt too wide) in paragraph at lines 424--426
 \T1/lmr/m/n/10 Die zuge-hörige zeit-diskrete Über-tra-gungs-funk-tion lautet na
 ch der z-Transformation: 
  []
 
-[7] [8] [9]
-
-LaTeX Warning: Command \" invalid in math mode on input line 607.
+[7
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 653.
+] [8] [9]
+
+LaTeX Warning: Command \" invalid in math mode on input line 630.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 653.
+LaTeX Warning: Command \" invalid in math mode on input line 676.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 676.
 
 [10]
 
-LaTeX Warning: Command \" invalid in math mode on input line 682.
+LaTeX Warning: Command \" invalid in math mode on input line 705.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 682.
+LaTeX Warning: Command \" invalid in math mode on input line 705.
 
 
-LaTeX Warning: Reference `fig:mseexample' on page 11 undefined on input line 69
-2.
+LaTeX Warning: Reference `fig:mseexample' on page 11 undefined on input line 71
+5.
 
 [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 751--755
+Underfull \hbox (badness 10000) in paragraph at lines 774--778
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 784--787
+Underfull \hbox (badness 10000) in paragraph at lines 807--810
 
  []
 
 
-Overfull \hbox (10.85489pt too wide) in paragraph at lines 801--803
+Overfull \hbox (10.85489pt too wide) in paragraph at lines 824--826
 \T1/lmr/m/n/10 berück-sichtigt wird zeigt Ab-bil-dung mitte. Das Aus-gangssig-n
 al ist das gle-iche Rauschsig-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 806--870
+Underfull \hbox (badness 10000) in paragraph at lines 829--893
 
  []
 
 [14]
 
 LaTeX Warning: Reference `fig:ecg_signal_with_noise' on page 15 undefined on in
-put line 873.
+put line 896.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
- input line 892.
+ input line 915.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
- input line 893.
+ input line 916.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
- input line 894.
+ input line 917.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--895
+Underfull \hbox (badness 10000) in paragraph at lines 899--918
 
  []
 
 
-Overfull \hbox (3.30887pt too wide) in paragraph at lines 876--895
+Overfull \hbox (3.30887pt too wide) in paragraph at lines 899--918
 \T1/lmr/m/n/10 Der Al-go-rith-mus zur adap-tiven Prädik-tion setzt sich aus fol
 -gen-den Op-er-a-tio-nen zusam-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--895
+Underfull \hbox (badness 10000) in paragraph at lines 899--918
 
  []
 
 
-Overfull \hbox (12.66666pt too wide) in paragraph at lines 876--895
+Overfull \hbox (12.66666pt too wide) in paragraph at lines 899--918
 [][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--895
+Underfull \hbox (badness 10000) in paragraph at lines 899--918
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 905--970
+Underfull \hbox (badness 10000) in paragraph at lines 928--993
 
  []
 
 
 LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 16 undefined on 
-input line 979.
+input line 1002.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 977--980
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1003
 
  []
 
 [16]
 
 LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 17 undefined on 
-input line 985.
+input line 1008.
 
 
-Overfull \hbox (4.22456pt too wide) in paragraph at lines 985--986
+Overfull \hbox (4.22456pt too wide) in paragraph at lines 1008--1009
 \T1/lmr/m/n/10 Um eine Datenkom-pres-sion mit-tels einer En-tro-piecodierung be
 ispiel-sweise durch führen
  []
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 17 undefin
-ed on input line 1077.
+ed on input line 1100.
 
 
-Overfull \hbox (3.13165pt too wide) in paragraph at lines 1076--1078
+Overfull \hbox (3.13165pt too wide) in paragraph at lines 1099--1101
 \T1/lmr/m/n/10 Im Prinzip baut diese Struk-tur auf die Struk-tur in Ab-bil-dung
  2.4[] auf. Neu hinzugekom-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1119
 
  []
 
 
-Overfull \hbox (22.66666pt too wide) in paragraph at lines 1079--1096
+Overfull \hbox (22.66666pt too wide) in paragraph at lines 1102--1119
 [][][][][][] 
  []
 
 [17]
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated' on page 18 unde
-fined on input line 1108.
+fined on input line 1131.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated_poles' on page 1
-8 undefined on input line 1110.
+8 undefined on input line 1133.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 18 undefin
-ed on input line 1118.
+ed on input line 1141.
 
 [18]
-Overfull \hbox (1.60399pt too wide) in paragraph at lines 1120--1123
+Overfull \hbox (1.60399pt too wide) in paragraph at lines 1143--1146
 \T1/lmr/m/n/10 um den Fak-tor 4.73. Dies kann auch ve-r-an-schaulicht wer-den i
 n-dem man die Maximum-
  []
@@ -1318,15 +1329,15 @@ n-dem man die Maximum-
 [19]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1126.
+(LaTeX3)     1149.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1126.
+(LaTeX3)     1149.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1126.
+(LaTeX3)     1149.
 
  (adaptive_filter.aux)
 
@@ -1337,10 +1348,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24144 strings out of 479799
- 502115 string characters out of 2879601
+ 24151 strings out of 479799
+ 502338 string characters out of 2879601
  935519 words of memory out of 3000000
- 40700 multiletter control sequences out of 15000+200000
+ 40705 multiletter control sequences out of 15000+200000
  599154 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,20n,111p,10612b,1040s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1359,9 +1370,9 @@ s/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pf
 b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/Mi
 KTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on adaptive_filter.pdf (19 pages, 350476 bytes).
+Output written on adaptive_filter.pdf (19 pages, 370298 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
