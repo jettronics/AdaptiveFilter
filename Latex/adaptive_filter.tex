@@ -326,11 +326,6 @@ e_k=d_k-\hat{x}_k
 
 Least Mean Square algorithm
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{../Images/mse.pdf}
-\end{figure}
-
 \begin{equation}
 \textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-\beta \frac{\partial E(e_k^2)}{\partial \textit{\textbf{b}}_k}\nonumber
 \end{equation}
@@ -363,11 +358,12 @@ E(e_k^2) = E(x_k^2)-2\textit{\textbf{b}}_k E(\textit{\textbf{X}}_k)+\textit{\tex
 \textit{\textbf{b}}_{k+1}=\textit{\textbf{b}}_k-2\beta \textit{\textbf{R}}_{xx,k}\left(\textit{\textbf{b}}_k-\textit{\textbf{b}}_{k-1}\right)\nonumber
 \end{equation}
 
-Optimum reached/exceeded by
-\begin{equation}
-\frac{\textit{\textbf{b}}_{k+1}-\textit{\textbf{b}}_{k}}{\textit{\textbf{b}}_{k}-\textit{\textbf{b}}_{k-1}}\leq 0 \rightarrow -1\nonumber
-\end{equation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{../Images/mse.pdf}
+\end{figure}
 
+Optimum reached by $\textit{\textbf{b}}_{k+1} = \textit{\textbf{b}}_{k-1}$
 
 \begin{equation}
 \beta=\frac{1}{2}\:I\:\textit{\textbf{R}}_{xx,k}^{-1} \xrightarrow{n\:x\:n} \beta=\frac{1}{2}\:\textit{\textbf{R}}_{xx,k}^{-1}\nonumber
@@ -376,6 +372,7 @@ Optimum reached/exceeded by
 \begin{equation}
 0 < \beta < \textit{\textbf{R}}_{xx,k}^{-1} \nonumber
 \end{equation}
+
 Convergence at sum of $\textit{\textbf{R}}_{xx,k}$  intrinsic values 
 \begin{equation}
 (N+1)\:R_{xx}(0)=(N+1)\:\sigma_{xx}^2\nonumber
