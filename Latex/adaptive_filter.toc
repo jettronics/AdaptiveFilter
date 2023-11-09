@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.1}Filter structure}{3}{}%
 \contentsline {section}{\numberline {1.2}Predictor}{3}{}%
 \contentsline {section}{\numberline {1.3}Update Algorithm}{3}{}%
-\contentsline {section}{\numberline {1.4}Noise and Echo cancellation}{5}{}%
+\contentsline {section}{\numberline {1.4}Echo and Noise cancellation}{5}{}%
 \contentsline {chapter}{\numberline {2}Prädiktion}{7}{}%
 \contentsline {section}{\numberline {2.1}Linearer Prädiktor}{7}{}%
 \contentsline {section}{\numberline {2.2}Bestimmung des Schätzfehlers}{8}{}%

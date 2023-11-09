@@ -8,13 +8,10 @@ T = 1/Fs;
 M = 4000;
 t = (0:M-1)*T;
 
-%s = 20*sin((6.28*150*t));
-%s = zeros(1,M);
 s = 4*randn(1,M);
 x = (5*sin((6.28*5*t))+5).*(2*sin(6.28*25*t));
 x_d = (5*sin(5*(6.28*t-0.3))+5).*(1.5*sin(25*(6.28*t-0.3)));
 
-%d = s+x;
 d = s+x_d;
 % prediction order (FIR filter order + 1)
 p = 32
@@ -27,25 +24,17 @@ Lx_init = length(x_init);
 Rx = xcorr(x_init,'unbiased');
 disp(Rx(Lx_init));
 
-%alpha = 0.000003;
-%alpha = 1/(Rx(Lx_init)*(p+1)*10);
-%disp(alpha);
-
 y = zeros(1,Lx);
 e = zeros(1,Lx+1);
-xx = [zeros(p,1)' x];
 rx0 = Rx(Lx_init);
 
 for k = 1:Lx
     if k > Lx_init
-      %rx1 = rx0 + ((1/Lx_init)*((xx(k)*xx(k))-(xx(k-Lx_init)*xx(k-Lx_init))));
-      rx1 = rx0 + ((1/Lx_init)*((xx(k)*xx(k))-rx0));
-      %Rx = xcorr(x(k-Lx_init+1:k),'unbiased');
-      %rx1 = Rx(Lx_init);
-      mu = 1/(rx1*(p+1)*10);
-      xn  = xx(k:1:k+N)';
-      b = b + 2*mu*e(k)*xn;
-      y(k) = xx(k+1:1:k+1+N)*b;
+      rx1 = rx0 + ((1/Lx_init)*((x(k)*x(k))-rx0));
+      beta = 1/(rx1*(p+1)*10);
+      xn  = x(k:-1:k-N)';
+      b = b + 2*beta*e(k)*xn;
+      y(k) = x(k:-1:k-N)*b;
       e(1+k) = d(k) - y(k);
       rx0 = rx1;
     endif
@@ -128,7 +117,6 @@ figure(4)
 clf
 subplot(3,1,1)
 plot(f,abs(Yx),'k')
-%ylim([0 0.2])
 xlim([0 200])
 title('Frequency Response of Disturbance','FontName','Arial', 'FontSize',12)
 subplot(3,1,2)
