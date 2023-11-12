@@ -10,11 +10,11 @@ M = 4000;
 % Create a time base
 t = (0:M-1)*T;
 % Loudspeaker signal
-x = (5*sin((6.28*5*t))+5).*(2*sin(6.28*25*t));
+x = (5*sin((5*6.28*t))+5).*(2*sin(25*6.28*t));
 % Loudspeaker signal coupled into Microphone (delayed and damped)
-x_d = (5*sin(5*(6.28*t-0.3))+5).*(1.5*sin(25*(6.28*t-0.3)));
+x_echo = (5*sin(5*(6.28*t-0.3))+5).*(1.5*sin(25*(6.28*t-0.3)));
 % Desired signal
-d = x_d;
+d = x_echo;
 % Predictor order (FIR filter order + 1)
 p = 32
 % Initialize Coefficients
@@ -32,20 +32,22 @@ disp(Rx(Lx_init));
 % Initialize output and error
 y = zeros(1,Lx);
 e = zeros(1,Lx+1);
+% Compensation delay
+delay = 230;
 
 for k = 1:Lx
     % Update coefficients after Initialization
-    if k > Lx_init
+    if k > (Lx_init+delay)
       % Update correlation value
-      rx1 = rx0 + ((1/Lx_init)*((x(k)*x(k))-rx0));
-      % Calculate Step size with a factor of 0.5
-      beta = 1/(rx1*(p+1)*2);
+      rx1 = rx0 + ((1/Lx_init)*((x(k-delay)*x(k-delay))-rx0));
+      % Calculate Step size with a factor of 0.2
+      beta = 1/(rx1*(p+1)*5);
       % Take input values based on number of coefficients
-      xn  = x(k:-1:k-N)';
+      xn  = x(k-delay:-1:k-N-delay)';
       % Update filter coefficients
       b = b + 2*beta*e(k)*xn;
       % Predict the desired signal
-      y(k) = x(k:-1:k-N)*b;
+      y(k) = x(k-delay:-1:k-N-delay)*b;
       % Calculate the difference between desired and predicted signal
       e(1+k) = d(k) - y(k);
       % Buffer old correlation value
@@ -57,7 +59,7 @@ e = e(1:Lx);
 
 f = [0:floor((M-1)/2)] / (M*(1/1000));
 
-Yx = fft(hamming(M)'.*x_d');
+Yx = fft(hamming(M)'.*x_echo');
 Yx = Yx/M;
 Yx = [Yx(1) 2*Yx(2:floor((M-1)/2)+1)];
 
@@ -75,7 +77,7 @@ title('Disturbance','FontName','Arial','FontSize',12)
 %grid on
 subplot(2,1,2)
 plot(t,d,'k')
-ylim([-45 45])
+ylim([-25 25])
 xlim([0.15 1.15])
 title('Required Signal disturbed','FontName','Arial','FontSize',12)
 %grid on
@@ -90,7 +92,7 @@ title('Estimated Disturbance','FontName','Arial','FontSize',12)
 %grid on
 subplot(3,1,2)
 plot(t,d,'k')
-ylim([-45 45])
+ylim([-25 25])
 xlim([0.15 1.15])
 title('Required Signal disturbed','FontName','Arial','FontSize',12)
 %grid on
@@ -113,10 +115,12 @@ title('Disturbance Free Signal','FontName','Arial', 'FontSize',12)
 figure(4)
 clf
 %subplot(2,1,1)
-plot(f,abs(Yx),'g')
-hold on
-plot(f,abs(Ye),'b')
+%plot(f,abs(Yx),'g')
+%hold on
+%plot(f,abs(Ye),'b')
+[AX,H1,H2] = plotyy(f,abs(Yx),f,abs(Ye))
 xlim([0 50])
+set(AX(2),'ylim',[0 0.02]);
 legend('Frequency Response Noise Signal', 'Frequency Response Noise free Signal')
 grid on
 %{
@@ -139,7 +143,7 @@ xlim([0.15 1.15])
 title('Disturbance','FontName','Arial','FontSize',12)
 %grid on
 subplot(2,1,2)
-plot(t,x_d,'k')
+plot(t,x_echo,'k')
 ylim([-25 25])
 xlim([0.15 1.15])
 title('Disturbance echo','FontName','Arial','FontSize',12)

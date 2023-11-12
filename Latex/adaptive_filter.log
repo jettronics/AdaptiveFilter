@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  9 NOV 2023 07:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.18)  12 NOV 2023 16:36
 entering extended mode
 **./adaptive_filter.tex
 (adaptive_filter.tex
@@ -1142,21 +1142,21 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface.
 
 LaTeX Font Info:    Trying to load font information for OT1+pzc on input line 2
-80.
+78.
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pzc.fd"
 File: ot1pzc.fd 2020/03/25 font definitions for OT1/pzc.
 ) [3]
 <../Images/mse.pdf, id=27, 514.92375pt x 442.65375pt>
 File: ../Images/mse.pdf Graphic file (type pdf)
 <use ../Images/mse.pdf>
-Package pdftex.def Info: ../Images/mse.pdf  used on input line 363.
+Package pdftex.def Info: ../Images/mse.pdf  used on input line 364.
 (pdftex.def)             Requested size: 284.52756pt x 244.59503pt.
  [4 <../Images/mse.pdf>]
 <../Images/EchoNoiseCancellation.jpg, id=35, 376.7676pt x 233.673pt>
 File: ../Images/EchoNoiseCancellation.jpg Graphic file (type jpg)
 <use ../Images/EchoNoiseCancellation.jpg>
 Package pdftex.def Info: ../Images/EchoNoiseCancellation.jpg  used on input lin
-e 409.
+e 410.
 (pdftex.def)             Requested size: 284.52756pt x 176.47017pt.
  [5 <../Images/EchoNoiseCancellation.jpg>] [6
 
@@ -1164,61 +1164,57 @@ e 409.
 ]
 chapter 2.
 
-Overfull \hbox (0.33687pt too wide) in paragraph at lines 421--423
+Overfull \hbox (0.33687pt too wide) in paragraph at lines 422--424
 \T1/lmr/m/n/10 Die zuge-hörige zeit-diskrete Über-tra-gungs-funk-tion lautet na
 ch der z-Transformation: 
  []
 
 [7] [8] [9]
 
-LaTeX Warning: Command \" invalid in math mode on input line 627.
+LaTeX Warning: Command \" invalid in math mode on input line 628.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 673.
+LaTeX Warning: Command \" invalid in math mode on input line 674.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 673.
+LaTeX Warning: Command \" invalid in math mode on input line 674.
 
 [10]
 
-LaTeX Warning: Command \" invalid in math mode on input line 702.
+LaTeX Warning: Command \" invalid in math mode on input line 703.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 702.
+LaTeX Warning: Command \" invalid in math mode on input line 703.
 
 
 LaTeX Warning: Reference `fig:mseexample' on page 11 undefined on input line 71
-2.
+3.
 
 [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 771--775
+Underfull \hbox (badness 10000) in paragraph at lines 772--776
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 804--807
+Underfull \hbox (badness 10000) in paragraph at lines 805--808
 
  []
 
 
-Overfull \hbox (10.85489pt too wide) in paragraph at lines 821--823
+Overfull \hbox (10.85489pt too wide) in paragraph at lines 822--824
 \T1/lmr/m/n/10 berück-sichtigt wird zeigt Ab-bil-dung mitte. Das Aus-gangssig-n
 al ist das gle-iche Rauschsig-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--890
+Underfull \hbox (badness 10000) in paragraph at lines 827--891
 
  []
 
 [14]
 
 LaTeX Warning: Reference `fig:ecg_signal_with_noise' on page 15 undefined on in
-put line 893.
-
-
-LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
- input line 912.
+put line 894.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
@@ -1229,91 +1225,95 @@ LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
  input line 914.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--915
+LaTeX Warning: Reference `fig:ecg_signal_without_noise' on page 15 undefined on
+ input line 915.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 897--916
 
  []
 
 
-Overfull \hbox (3.30887pt too wide) in paragraph at lines 896--915
+Overfull \hbox (3.30887pt too wide) in paragraph at lines 897--916
 \T1/lmr/m/n/10 Der Al-go-rith-mus zur adap-tiven Prädik-tion setzt sich aus fol
 -gen-den Op-er-a-tio-nen zusam-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--915
+Underfull \hbox (badness 10000) in paragraph at lines 897--916
 
  []
 
 
-Overfull \hbox (12.66666pt too wide) in paragraph at lines 896--915
+Overfull \hbox (12.66666pt too wide) in paragraph at lines 897--916
 [][][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--915
+Underfull \hbox (badness 10000) in paragraph at lines 897--916
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 925--990
+Underfull \hbox (badness 10000) in paragraph at lines 926--991
 
  []
 
 
 LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 16 undefined on 
-input line 999.
+input line 1000.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 997--1000
+Underfull \hbox (badness 10000) in paragraph at lines 998--1001
 
  []
 
 [16]
 
 LaTeX Warning: Reference `fig:ecg_signal_decorrelated' on page 17 undefined on 
-input line 1005.
+input line 1006.
 
 
-Overfull \hbox (4.22456pt too wide) in paragraph at lines 1005--1006
+Overfull \hbox (4.22456pt too wide) in paragraph at lines 1006--1007
 \T1/lmr/m/n/10 Um eine Datenkom-pres-sion mit-tels einer En-tro-piecodierung be
 ispiel-sweise durch führen
  []
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 17 undefin
-ed on input line 1097.
+ed on input line 1098.
 
 
-Overfull \hbox (3.13165pt too wide) in paragraph at lines 1096--1098
+Overfull \hbox (3.13165pt too wide) in paragraph at lines 1097--1099
 \T1/lmr/m/n/10 Im Prinzip baut diese Struk-tur auf die Struk-tur in Ab-bil-dung
  2.4[] auf. Neu hinzugekom-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1116
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1117
 
  []
 
 
-Overfull \hbox (22.66666pt too wide) in paragraph at lines 1099--1116
+Overfull \hbox (22.66666pt too wide) in paragraph at lines 1100--1117
 [][][][][][] 
  []
 
 [17]
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated' on page 18 unde
-fined on input line 1128.
+fined on input line 1129.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_back_correlated_poles' on page 1
-8 undefined on input line 1130.
+8 undefined on input line 1131.
 
 
 LaTeX Warning: Reference `fig:ecg_signal_quant_decorrelated' on page 18 undefin
-ed on input line 1138.
+ed on input line 1139.
 
 [18]
-Overfull \hbox (1.60399pt too wide) in paragraph at lines 1140--1143
+Overfull \hbox (1.60399pt too wide) in paragraph at lines 1141--1144
 \T1/lmr/m/n/10 um den Fak-tor 4.73. Dies kann auch ve-r-an-schaulicht wer-den i
 n-dem man die Maximum-
  []
@@ -1321,15 +1321,15 @@ n-dem man die Maximum-
 [19]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1146.
+(LaTeX3)     1147.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1146.
+(LaTeX3)     1147.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     1146.
+(LaTeX3)     1147.
 
  (adaptive_filter.aux)
 
@@ -1340,10 +1340,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24151 strings out of 479799
- 502338 string characters out of 2879601
- 937590 words of memory out of 3000000
- 40705 multiletter control sequences out of 15000+200000
+ 24160 strings out of 479799
+ 502489 string characters out of 2879601
+ 939761 words of memory out of 3000000
+ 40714 multiletter control sequences out of 15000+200000
  599154 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,20n,111p,10612b,1040s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1362,7 +1362,7 @@ s/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pf
 b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/Mi
 KTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on adaptive_filter.pdf (19 pages, 370119 bytes).
+Output written on adaptive_filter.pdf (19 pages, 370165 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
